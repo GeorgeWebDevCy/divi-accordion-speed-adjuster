@@ -133,6 +133,29 @@ if ( ! class_exists( 'Divi_Accordion_Speed_Adjuster' ) ) :
 			load_plugin_textdomain( 'divi-accordion-speed-adjuster', FALSE, dirname( plugin_basename( DIVIACCORD_PLUGIN_FILE ) ) . '/languages/' );
 		}
 
+/**
+ * Disable accordion toggle animation
+ */
+public function disable_toggle_animation() {
+    add_action( 'wp_footer', function() {
+        ?>
+        <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('body').off('click', '.et_pb_toggle_title, .et_fb_toggle_overlay');
+                $('.et_pb_toggle').click(function (e) {
+                    $(this).children('.et_pb_toggle_content').toggle();
+                    $(this).toggleClass('et_pb_toggle_close et_pb_toggle_open');
+                });
+            });
+            //console.log('Accordion toggle animation disabled.');
+        })(jQuery);
+        </script>
+        <?php
+    });
+}
+
+
 	}
 
 endif; // End if class_exists check.
