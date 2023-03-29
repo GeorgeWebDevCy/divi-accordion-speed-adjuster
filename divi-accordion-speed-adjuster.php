@@ -7,7 +7,6 @@
  * @license       gplv2
  * @version       1.0.0
  *
- * @wordpress-plugin
  * Plugin Name:   Divi Accordion Speed Adjuster
  * Plugin URI:    https://www.georgenicolaou.me/plugins/divi-accordion-speed-adjuster
  * Description:   A plugin that allows you to adjust the speed of the Divi Theme Accordion Module
@@ -25,6 +24,7 @@
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Plugin name
 define( 'DIVIACCORD_NAME',			'Divi Accordion Speed Adjuster' );
 
@@ -60,4 +60,26 @@ function DIVIACCORD() {
 	return Divi_Accordion_Speed_Adjuster::instance();
 }
 
+function divi_accordion_check() {
+    // Check if Divi or a child theme of Divi is active
+    $theme = wp_get_theme();
+    $parent_theme = $theme->parent();
+    $divi_active = ( 'Divi' == $theme->name || 'Divi' == $parent_theme->name );
+    
+    // If Divi is not active, display an admin notice and deactivate the plugin
+    if ( ! $divi_active ) {
+        deactivate_plugins( plugin_basename( __FILE__ ) );
+        add_action( 'admin_notices', 'divi_accordion_admin_notice' );
+    }
+}
+
+function divi_accordion_admin_notice() {
+    echo '<div class="notice notice-error is-dismissible"><p>';
+    echo sprintf( __( '%s requires Divi or a child theme of Divi to be active. Please activate Divi or a Divi child theme and try again.', 'divi-accordion-speed-adjuster' ), DIVIACCORD_NAME );
+    echo '</p></div>';
+}
+
+add_action( 'admin_init', 'divi_accordion_check' );
+
 DIVIACCORD();
+DIVIACCORD()->disable_toggle_animation();
