@@ -1,6 +1,6 @@
-=== Divi Accordion Speed Adjuster ===
+=== GN Accordion Animation Disabler ===
 Author URI: https://www.georgenicolaou.me/
-Plugin URI: https://www.georgenicolaou.me/plugins/divi-accordion-speed-adjuster
+Plugin URI: https://www.georgenicolaou.me/plugins/gn-accordion-speed-adjuster
 Donate link: 
 Contributors: orionaselite
 Tags: Divi, Divi Accordion, Divi Toggle
@@ -13,11 +13,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
  A plugin that allows you to remove the Amination of the Divi Theme Accordion Module
 
-Divi Accordion Speed Adjuster is a simple plugin that allows you to remove the animation from the Divi Theme Accordion Module. This can be useful if you want to speed up the loading time of your website or if you prefer a static display of your accordion content.
+GN Accordion Animation Disabler is a simple plugin that allows you to remove the animation from the Divi Theme Accordion Module. This can be useful if you want to speed up the loading time of your website or if you prefer a static display of your accordion content.
 
 == Installation ==
 
-1. Upload the `divi-accordion-speed-adjuster` folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the `gn-accordion-speed-adjuster` folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Let the magic happen
 
@@ -39,4 +39,4 @@ Yes, this plugin is fully translatable and comes with a `.pot` file that you can
 == Changelog ==
 
 = 1.0.0: March 17, 2023 =
-* Birthday of Divi Accordion Speed Adjuster
+* Birthday of GN Accordion Animation Disabler

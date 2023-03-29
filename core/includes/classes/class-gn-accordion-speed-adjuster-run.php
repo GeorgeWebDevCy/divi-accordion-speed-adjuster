@@ -67,7 +67,7 @@ class Divi_Accordion_Speed_Adjuster_Run{
 		wp_enqueue_style( 'diviaccord-backend-styles', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/css/backend-styles.css', array(), DIVIACCORD_VERSION, 'all' );
 		wp_enqueue_script( 'diviaccord-backend-scripts', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/js/backend-scripts.js', array(), DIVIACCORD_VERSION, false );
 		wp_localize_script( 'diviaccord-backend-scripts', 'diviaccord', array(
-			'plugin_name'   	=> __( DIVIACCORD_NAME, 'divi-accordion-speed-adjuster' ),
+			'plugin_name'   	=> __( DIVIACCORD_NAME, 'gn-accordion-speed-adjuster' ),
 		));
 	}
 

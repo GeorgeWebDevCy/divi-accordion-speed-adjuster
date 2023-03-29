@@ -51,7 +51,7 @@ if ( ! class_exists( 'Divi_Accordion_Speed_Adjuster' ) ) :
 		 * @return	void
 		 */
 		public function __clone() {
-			_doing_it_wrong( __FUNCTION__, __( 'You are not allowed to clone this class.', 'divi-accordion-speed-adjuster' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'You are not allowed to clone this class.', 'gn-accordion-speed-adjuster' ), '1.0.0' );
 		}
 
 		/**
@@ -62,7 +62,7 @@ if ( ! class_exists( 'Divi_Accordion_Speed_Adjuster' ) ) :
 		 * @return	void
 		 */
 		public function __wakeup() {
-			_doing_it_wrong( __FUNCTION__, __( 'You are not allowed to unserialize this class.', 'divi-accordion-speed-adjuster' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'You are not allowed to unserialize this class.', 'gn-accordion-speed-adjuster' ), '1.0.0' );
 		}
 
 		/**
@@ -105,10 +105,10 @@ if ( ! class_exists( 'Divi_Accordion_Speed_Adjuster' ) ) :
 		 * @return  void
 		 */
 		private function includes() {
-			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-divi-accordion-speed-adjuster-helpers.php';
-			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-divi-accordion-speed-adjuster-settings.php';
+			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-gn-accordion-speed-adjuster-helpers.php';
+			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-gn-accordion-speed-adjuster-settings.php';
 
-			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-divi-accordion-speed-adjuster-run.php';
+			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-gn-accordion-speed-adjuster-run.php';
 		}
 
 		/**
@@ -130,7 +130,7 @@ if ( ! class_exists( 'Divi_Accordion_Speed_Adjuster' ) ) :
 		 * @return  void
 		 */
 		public function load_textdomain() {
-			load_plugin_textdomain( 'divi-accordion-speed-adjuster', FALSE, dirname( plugin_basename( DIVIACCORD_PLUGIN_FILE ) ) . '/languages/' );
+			load_plugin_textdomain( 'gn-accordion-speed-adjuster', FALSE, dirname( plugin_basename( DIVIACCORD_PLUGIN_FILE ) ) . '/languages/' );
 		}
 
 /**
