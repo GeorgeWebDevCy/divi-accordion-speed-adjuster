@@ -43,6 +43,7 @@ class Divi_Accordion_Speed_Adjuster_Run{
 	private function add_hooks(){
 	
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_backend_scripts_and_styles' ), 20 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_frontend_scripts_and_styles' ), 20 );
 	
 	}
 
@@ -69,6 +70,19 @@ class Divi_Accordion_Speed_Adjuster_Run{
 		wp_localize_script( 'diviaccord-backend-scripts', 'diviaccord', array(
 			'plugin_name'   	=> __( DIVIACCORD_NAME, 'gn-accordion-speed-adjuster' ),
 		));
+	}
+
+	/**
+	 * Enqueue the frontend related scripts and styles for this plugin.
+	 * All of the added scripts andstyles will be available on every page within the frontend.
+	 *
+	 * @access	public
+	 * @since	1.0.0
+	 *
+	 * @return	void
+	 */
+	public function enqueue_frontend_scripts_and_styles() {
+		wp_enqueue_style( 'diviaccord-frontend-styles', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/css/frontend-styles.css', array(), DIVIACCORD_VERSION, 'all' );
 	}
 
 }

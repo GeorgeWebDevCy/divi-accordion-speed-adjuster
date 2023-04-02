@@ -1,0 +1,21 @@
+/*----------------- 
+Frontend related CSS
+-----------------*/
+
+.et_pb_toggle_close .gn_toggle_content{
+    display: none;
+}
+
+.gn_toggle_content{
+    padding-top: 20px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.gn_toggle_block_show{
+    display: block;
+}
+
+.gn_toggle_block_hide{
+    display: none;
+}

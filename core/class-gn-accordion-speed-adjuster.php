@@ -107,7 +107,6 @@ if ( ! class_exists( 'Divi_Accordion_Speed_Adjuster' ) ) :
 		private function includes() {
 			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-gn-accordion-speed-adjuster-helpers.php';
 			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-gn-accordion-speed-adjuster-settings.php';
-
 			require_once DIVIACCORD_PLUGIN_DIR . 'core/includes/classes/class-gn-accordion-speed-adjuster-run.php';
 		}
 
@@ -141,12 +140,31 @@ public function disable_toggle_animation() {
         ?>
         <script>
         (function ($) {
-            $(document).ready(function () {
-                $('body').off('click', '.et_pb_toggle_title, .et_fb_toggle_overlay');
-                $('.et_pb_toggle').click(function (e) {
-                    $(this).children('.et_pb_toggle_content').toggle();
-                    $(this).toggleClass('et_pb_toggle_close et_pb_toggle_open');
-                });
+            $(document).ready(function () {			
+				//Loop through all the toggles and set up initial states 
+				$('.et_pb_toggle_title').each(function() {
+					//Remove default toggle content class
+					$(this).next().removeClass('et_pb_toggle_content');
+					$(this).next().addClass('gn_toggle_content');				
+				});
+
+				//Add event listener to toggle titles
+				$('.et_pb_toggle_title').click(function() {
+					//Check if the toggle needs to be opened or closed by parent class
+					if($(this).parent().hasClass('et_pb_toggle_open')) {
+						//Close the toggle
+						$(this).parent().removeClass('et_pb_toggle_open');
+						$(this).parent().addClass('et_pb_toggle_close');
+						console.log('Toggle closed');
+					}else{
+						//Open the toggle
+						$(this).parent().removeClass('et_pb_toggle_close');
+						$(this).parent().addClass('et_pb_toggle_open');
+						console.log('Toggle opened');
+					}
+	
+				});
+
             });
             //console.log('Accordion toggle animation disabled.');
         })(jQuery);
