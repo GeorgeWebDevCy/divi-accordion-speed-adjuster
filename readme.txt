@@ -1,4 +1,4 @@
-=== GN Toogle and Accordion Animation Disabler ===
+=== GN Toggle and Accordion Animation Disabler ===
 Author URI: https://www.georgenicolaou.me/
 Plugin URI: https://www.georgenicolaou.me/plugins/gn-accordion-animation-disabler
 Donate link: 
