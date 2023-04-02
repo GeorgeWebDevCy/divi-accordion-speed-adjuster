@@ -1,8 +1,8 @@
-=== GN Accordion Animation Disabler ===
+=== GN Toogle and Accordion Animation Disabler ===
 Author URI: https://www.georgenicolaou.me/
-Plugin URI: https://www.georgenicolaou.me/plugins/gn-accordion-speed-adjuster
+Plugin URI: https://www.georgenicolaou.me/plugins/gn-accordion-animation-disabler
 Donate link: 
-Contributors: orionaselite
+Contributors: orionaselite,lightbulbman
 Tags: Divi, Divi Accordion, Divi Toggle
 Requires at least: 
 Tested up to: 6.1.1
@@ -11,21 +11,21 @@ Stable tag: 1.0.0
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
- A plugin that allows you to remove the Amination of the Divi Theme Accordion Module
+ A plugin that allows you to remove the Amination of the Divi Theme Toggle and Accordion Module
 
-GN Accordion Animation Disabler is a simple plugin that allows you to remove the animation from the Divi Theme Accordion Module. This can be useful if you want to speed up the loading time of your website or if you prefer a static display of your accordion content.
+GN Accordion Animation Disabler is a simple plugin that allows you to remove the animation from the Divi Theme Toggle & Accordion Module.
 
 == Installation ==
 
-1. Upload the `gn-accordion-speed-adjuster` folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the `gn-accordion-animation-disabler` folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Let the magic happen
 
 == Frequently Asked Questions ==
 
-= Can I re-enable the accordion animation if I change my mind? =
+= Can I re-enable the togglr and accordion animation if I change my mind? =
 
-Yes, you can re-enable the accordion animation by deactivating the plugin or by removing the custom CSS rule added in step 3 above.
+Yes, you can re-enable the toogle and accordion animation by deactivating the plugin
 
 = Is this plugin compatible with the latest version of WordPress and Divi? =
 
@@ -39,4 +39,4 @@ Yes, this plugin is fully translatable and comes with a `.pot` file that you can
 == Changelog ==
 
 = 1.0.0: March 17, 2023 =
-* Birthday of GN Accordion Animation Disabler
+* Birthday of GN Toogle & Accordion Animation Disabler
