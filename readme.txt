@@ -15,6 +15,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 GN Accordion Animation Disabler is a simple plugin that allows you to remove the animation from the Divi Theme Toggle & Accordion Module.
 
+**Quick overview of GN Toggle and Accordion Animation Disabler
+
+https://www.youtube.com/watch?v=GHaM_GHziXI
+
+
 == Installation ==
 
 1. Upload the `gn-accordion-animation-disabler` folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
