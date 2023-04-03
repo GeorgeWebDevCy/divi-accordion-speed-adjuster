@@ -3,7 +3,7 @@
  * GN Accordion Animation Disabler
  *
  * @package       DIVIACCORD
- * @author        George Nicolaou
+ * @author        George Nicolaou & Atif Riaz
  * @license       gplv2
  * @version       1.0.0
  *
