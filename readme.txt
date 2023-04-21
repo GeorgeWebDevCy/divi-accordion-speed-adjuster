@@ -28,13 +28,13 @@ https://www.youtube.com/watch?v=GHaM_GHziXI
 
 == Frequently Asked Questions ==
 
-= Can I re-enable the togglr and accordion animation if I change my mind? =
+= Can I re-enable the toggle and accordion animation if I change my mind? =
 
-Yes, you can re-enable the toogle and accordion animation by deactivating the plugin
+Yes, you can re-enable the toggle and accordion animation by deactivating the plugin
 
 = Is this plugin compatible with the latest version of WordPress and Divi? =
 
-Yes, this plugin has been tested with the latest version of WordPress and Divi at the time of writing (WordPress 5.9 and Divi 4.10.9), but it should work with older versions as well.
+Yes, this plugin has been tested with the latest version of WordPress and Divi.
 
 = Can I translate this plugin into my language? =
 
