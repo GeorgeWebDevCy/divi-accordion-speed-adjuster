@@ -48,7 +48,7 @@ if (!defined('ABSPATH'))
 define('GNTOGGLEAN_NAME', 'GN Toggle and Accordion Animation Disabler');
 
 // Plugin version
-define('GNTOGGLEAN_VERSION', '1.0.0');
+define('GNTOGGLEAN_VERSION', '1.0.1');
 
 // Plugin Root File
 define('GNTOGGLEAN_PLUGIN_FILE', __FILE__);
