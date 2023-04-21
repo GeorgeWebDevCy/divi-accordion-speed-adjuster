@@ -17,15 +17,15 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-KeywordsList: _;__e;_e\n"
 
-#: core/class-gn-accordion-speed-adjuster.php:54
+#: core/class-gn-accordion-animation-disabler.php:54
 msgid "You are not allowed to clone this class."
 msgstr "You are not allowed to clone this class."
 
-#: core/class-gn-accordion-speed-adjuster.php:65
+#: core/class-gn-accordion-animation-disabler.php:65
 msgid "You are not allowed to unserialize this class."
 msgstr "You are not allowed to unserialize this class."
 
-#: gn-accordion-speed-adjuster.php:78
+#: gn-accordion-animation-disabler.php:78
 msgid ""
 "%s requires Divi or a child theme of Divi to be active. Please activate Divi "
 "or a Divi child theme and try again."
@@ -38,8 +38,8 @@ msgid "GN Accordion Animation Disabler"
 msgstr "GN Accordion Animation Disabler"
 
 #. Plugin URI of the plugin/theme
-msgid "https://www.georgenicolaou.me/plugins/gn-accordion-speed-adjuster"
-msgstr "https://www.georgenicolaou.me/plugins/gn-accordion-speed-adjuster"
+msgid "https://www.georgenicolaou.me/plugins/gn-accordion-animation-disabler"
+msgstr "https://www.georgenicolaou.me/plugins/gn-accordion-animation-disabler"
 
 #. Description of the plugin/theme
 msgid ""

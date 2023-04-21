@@ -5,9 +5,9 @@ Donate link:
 Contributors: orionaselite,lightbulbman
 Tags: Divi, Divi Accordion, Divi Toggle
 Requires at least: 
-Tested up to: 6.1.1
+Tested up to: 6.2
 Requires PHP: 
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,3 +45,6 @@ Yes, this plugin is fully translatable and comes with a `.pot` file that you can
 
 = 1.0.0: March 17, 2023 =
 * Birthday of GN Toogle & Accordion Animation Disabler
+
+= 1.0.1: March 21, 2023 =
+* Repo Release and translation rebase

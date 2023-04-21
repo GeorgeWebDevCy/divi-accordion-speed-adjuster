@@ -1,7 +1,8 @@
 <?php
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) exit;
+if (!defined('ABSPATH'))
+	exit;
 
 /**
  * Class Divi_Accordion_Speed_Adjuster_Run
@@ -13,7 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @author		George Nicolaou
  * @since		1.0.0
  */
-class Divi_Accordion_Speed_Adjuster_Run{
+class Divi_Accordion_Speed_Adjuster_Run
+{
 
 	/**
 	 * Our Divi_Accordion_Speed_Adjuster_Run constructor 
@@ -21,7 +23,8 @@ class Divi_Accordion_Speed_Adjuster_Run{
 	 *
 	 * @since 1.0.0
 	 */
-	function __construct(){
+	function __construct()
+	{
 		$this->add_hooks();
 	}
 
@@ -40,11 +43,12 @@ class Divi_Accordion_Speed_Adjuster_Run{
 	 * @since	1.0.0
 	 * @return	void
 	 */
-	private function add_hooks(){
-	
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_backend_scripts_and_styles' ), 20 );
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_frontend_scripts_and_styles' ), 20 );
-	
+	private function add_hooks()
+	{
+
+		add_action('admin_enqueue_scripts', array($this, 'enqueue_backend_scripts_and_styles'), 20);
+		add_action('wp_enqueue_scripts', array($this, 'enqueue_frontend_scripts_and_styles'), 20);
+
 	}
 
 	/**
@@ -64,12 +68,14 @@ class Divi_Accordion_Speed_Adjuster_Run{
 	 *
 	 * @return	void
 	 */
-	public function enqueue_backend_scripts_and_styles() {
-		wp_enqueue_style( 'diviaccord-backend-styles', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/css/backend-styles.css', array(), DIVIACCORD_VERSION, 'all' );
-		wp_enqueue_script( 'diviaccord-backend-scripts', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/js/backend-scripts.js', array(), DIVIACCORD_VERSION, false );
-		wp_localize_script( 'diviaccord-backend-scripts', 'diviaccord', array(
-			'plugin_name'   	=> __( DIVIACCORD_NAME, 'gn-accordion-speed-adjuster' ),
-		));
+	public function enqueue_backend_scripts_and_styles()
+	{
+		wp_enqueue_style('diviaccord-backend-styles', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/css/backend-styles.css', array(), DIVIACCORD_VERSION, 'all');
+		wp_enqueue_script('diviaccord-backend-scripts', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/js/backend-scripts.js', array(), DIVIACCORD_VERSION, false);
+		wp_localize_script('diviaccord-backend-scripts', 'diviaccord', array(
+			'plugin_name' => __(DIVIACCORD_NAME, 'gn-accordion-animation-disabler'),
+		)
+		);
 	}
 
 	/**
@@ -81,8 +87,9 @@ class Divi_Accordion_Speed_Adjuster_Run{
 	 *
 	 * @return	void
 	 */
-	public function enqueue_frontend_scripts_and_styles() {
-		wp_enqueue_style( 'diviaccord-frontend-styles', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/css/frontend-styles.css', array(), DIVIACCORD_VERSION, 'all' );
+	public function enqueue_frontend_scripts_and_styles()
+	{
+		wp_enqueue_style('diviaccord-frontend-styles', DIVIACCORD_PLUGIN_URL . 'core/includes/assets/css/frontend-styles.css', array(), DIVIACCORD_VERSION, 'all');
 	}
 
 }
