@@ -28,7 +28,7 @@ https://www.youtube.com/watch?v=GHaM_GHziXI
 
 == Frequently Asked Questions ==
 
-= Can I re-enable the togglr and accordion animation if I change my mind? =
+= Can I re-enable the toggle and accordion animation if I change my mind? =
 
 Yes, you can re-enable the toogle and accordion animation by deactivating the plugin
 
@@ -45,3 +45,6 @@ Yes, this plugin is fully translatable and comes with a `.pot` file that you can
 
 = 1.0.0: March 17, 2023 =
 * Birthday of GN Toogle & Accordion Animation Disabler
+
+= 1.0.1: March 17, 2023 =
+* Translation fixes
