@@ -67,7 +67,7 @@ function divi_accordion_check()
     // Check if Divi or a child theme of Divi is active
     $theme = wp_get_theme();
     $parent_theme = $theme->parent();
-    $divi_active = ('Divi' == $theme->name || 'Divi' == $parent_theme->name);
+    $divi_active = ('Divi' == $theme->name || ($parent_theme && 'Divi' == $parent_theme->name));
 
     // If Divi is not active, display an admin notice and deactivate the plugin
     if (!$divi_active) {
