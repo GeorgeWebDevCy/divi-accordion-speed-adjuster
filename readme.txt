@@ -48,3 +48,6 @@ Yes, this plugin is fully translatable and comes with a `.pot` file that you can
 
 = 1.0.1: March 21, 2023 =
 * Repo Release and translation rebase
+
+= 1.0.2: March 23, 2023 =
+* Fix activation warning

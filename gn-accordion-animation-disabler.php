@@ -5,12 +5,12 @@
  * @package       DIVIACCORD
  * @author        George Nicolaou & Atif Riaz
  * @license       gplv2
- * @version       1.0.1
+ * @version       1.0.2
  *
  * Plugin Name:   GN Accordion Animation Disabler
  * Plugin URI:    https://www.georgenicolaou.me/plugins/gn-accordion-animation-disabler
  * Description:   A plugin that allows you to remove the speed of the Divi Theme Accordion Module
- * Version:       1.0.1
+ * Version:       1.0.2
  * Author:        George Nicolaou & Atif Riaz
  * Author URI:    https://www.georgenicolaou.me/
  * Text Domain:   gn-accordion-animation-disabler
@@ -30,7 +30,7 @@ if (!defined('ABSPATH'))
 define('DIVIACCORD_NAME', 'GN Accordion Animation Disabler');
 
 // Plugin version
-define('DIVIACCORD_VERSION', '1.0.1');
+define('DIVIACCORD_VERSION', '1.0.2');
 
 // Plugin Root File
 define('DIVIACCORD_PLUGIN_FILE', __FILE__);
